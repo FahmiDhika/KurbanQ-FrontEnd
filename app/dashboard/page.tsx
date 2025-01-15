@@ -17,12 +17,12 @@ import keunggulan2 from "@/public/keunggulan2.svg";
 import keunggulan3 from "@/public/keunggulan3.svg";
 
 export default function Dashboard() {
-  const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({delay: 2000, stopOnInteraction: false})]);
 
   return (
     // image carousel
     <>
-      <div className="embla ml-72 mb-10" ref={emblaRef}>
+      <div className="embla pl-80 mb-10" ref={emblaRef}>
         <div className="embla__container">
           <div className="embla__slide">
             <Image src={mainImage} alt="" className="imageLandingpage"></Image>
@@ -39,7 +39,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <div className="flex">
+      <div className="flex mb-32">
         <Item
           title="Layanan Praktis"
           description="Bisa pesan online di website QurbanQ"
@@ -48,13 +48,19 @@ export default function Dashboard() {
         <Item
           title="Hewan Berkualitas"
           description="Kesehatan terjaga dengan baik"
-          icon={keunggulan1}
+          icon={keunggulan2}
         />
         <Item
           title="Pelayanan Cepat"
           description="Langsung sat set wat wet"
-          icon={keunggulan1}
+          icon={keunggulan3}
         />
+      </div>
+
+      <div className="flex w-full justify-evenly">
+        <Image src={domba} alt="" width={500}></Image>
+        <Image src={sapi} alt="" width={500}></Image>
+        <Image src={kambing} alt="" width={500}></Image>
       </div>
     </>
   );
