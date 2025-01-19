@@ -12,6 +12,18 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        "login": "url('/background1.svg')"
+      },
+      backgroundColor: {
+        "green": "#43B031"
+      },
+      textColor: {
+        "green": "#43B031"
+      },
+      borderColor: {
+        "green": "#43B031"
+      }
     },
   },
   plugins: [],
