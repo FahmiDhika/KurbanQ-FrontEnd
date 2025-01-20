@@ -73,7 +73,7 @@ const LoginPage = () => {
             alt=""
           />
           <div className="text-center py-6">
-            <h1 className="text-4xl font-bold">SELAMAT DATANG!</h1>
+            <h1 className="text-4xl font-bold">douhawuodhwa</h1>
             <p className="text-green">Sign In ke akun kamu sekarang</p>
 
             {/* form submit login */}
